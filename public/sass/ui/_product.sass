@@ -1,48 +1,183 @@
-.ui-product
-  display: block
-
-  &-wrapper
-    width: 100%
+.custom-4 .main
+    padding-top: 20px
+    .single-product-wrapper
+        position: relative
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        & .product-wrapper
+            display: flex
+            position: relative
+            padding-bottom: 40px
+            border-bottom: 1px solid #eee
+            .slider-img
+                width: 50%
+                .slider-main-img
+                    cursor: pointer
+                    padding: 
+                    max-height: 689px
+                    position: relative
+                    overflow: hidden
+                    margin-bottom: 20px
+            .product-wrapper-summary
+                width: 50%
+                padding-left: 20px
+                & h2
+                    font-size: 27px
+                    margin: 0
+                    color: #222
+                    font-weight: 400
+                    line-height: 1.1
+                & .content-item-info-cate
+                    margin-top: 10px
+                    font-size: 13px
+                    & span
+                        color: #ccc
+                        transition: all 350ms ease-in-out
+                & .product-wrapper-summary-list
+                    margin-top: 26px
+                    ul 
+                        padding: 0
+                        li
+                            font-weight: 300
+                            font-size: 16px
+                            color: #666666
+                            line-height: 1.6
+                & .price
+                    color: #af996b
+                    font-size: 27px
+                    & del 
+                        color: #666
+                        font-size: 18px
+                        margin-left: 5px
+                        font-weight: 400
+                    & ins
+                        text-decoration: none
+                & .product-single-add-to-card
+                    margin-top: 30px
+                    display: flex
+                    & .quantity
+                        display: flex
+                        width: 120px
+                        margin-right: 10px
+                        position: relative
+                        height: 35px
+                        .plusminus
+                            cursor: pointer
+                            padding-left: 15px
+                            padding-right: 15px
+                            width: 35px
+                            position: relative
+                            background: #af996b
+                            opacity: 0.8
+                            transition: all 200ms ease-in-out
+                            &:hover
+                                background-color: #9A620E
+                            & i 
+                                top: 30%
+                                left: 33%
+                                position: absolute
+                        & input
+                            text-align: center
+                            font-size: 16px
+                            max-width: 50px
+                            border: none
+                            background-color: #af996b
+                    & button
+                        width: 120px
+                        background-color: #af996b
+                        color: #fff
+                        font-size: 13px
+                        transition: all 200ms ease-in-out
+                        & i 
+                            color: #fff 
+                            margin-right: 5px
+                        &:hover
+                            background-color: #9A620E
+                & .product-summary-cate
+                    font-size: 16px
+                    & span
+                        color: #af996b
+                        opacity: 0.9
+                & .product-summary-flex-icon
+                    display: flex
+                    &-item
+                        overflow: auto
+                        padding-left: 5px
+                        padding-right: 5px
+                        & a i 
+                            cursor: pointer
+                            font-size: 40px
+                            transition: all 240ms ease-in-out
+                            &:hover
+                                color: #af996b
+                    &-item:first-child
+                        padding-left: 0 !important
+                        
+.product-slider
     display: flex
     justify-content: space-between
-
-  .product-images
-    display: flex
-    flex-direction: row
-    width: 50%
-
-    .image-hero
-      width: 100%
-      padding: 0 10px
-      display: flex
-      align-items: center
-      justify-content: center
-
-      img
-        width: 100%
-
-    .image-small
-      display: flex
-      flex-direction: column
-      padding: 0 10px
-
-      img
-        max-width: 70px
-        height: auto
-
-  .product-infomation
-    width: 50%
-    padding-left: 30px
-
-    .product-title
-      text-transform: uppercase
-      font-size: 30px
-      font-weight: 900
-    .product-price
-      color: $palette-btn
-      font-size: 20px
-      margin: 30px 0
-      font-weight: 600
-    .product-content
-      margin-top: 30px
-      line-height: 24px
+    & div
+        flex: 0 0 25%
+        padding-left: 10px
+        padding-right: 10px
+        & img
+            cursor: pointer
+            max-width: 113px
+            width: 100%
+            max-height: 115px
+            height: 100%
+            opacity: 0.7
+    & div:first-child
+        padding-left: 0
+    & div:last-child
+        padding-right: 0
+.product-description
+    padding-top: 10px
+    &-tabs
+        display: flex
+        justify-content: flex-start
+        & div
+            padding-right: 20px
+            padding-left: 20px
+        & div:first-child
+            padding-left: 0 !important
+            border-right: 1px solid #eee
+        &-description h3
+            cursor: pointer
+            color: #222 
+            font-weight: 400
+            font-size: 18px
+            transition: all 300ms ease-in-out
+        &-review h3
+            cursor: pointer
+            color: #222 
+            font-weight: 400
+            font-size: 18px
+            transition: all 300ms ease-in-out
+        &-content
+            padding-top: 10px
+        &-description-content p
+            font-size: 16px
+            color: #666 
+            font-weight: 300
+            margin: 0 0 9.5px
+        &-review-content
+            display: none
+            max-width: 800px
+            margin: 0 auto
+.tabs-active
+    border-bottom: 1px solid
+    border-bottom-color: #af996b
+.slider-active img
+    opacity: 1 !important
+.zoomImg
+    overflow: auto
+    img.products-img
+        top: 0
+        position: absolute
+    img
+        transition: all 300ms ease-in-out
+        opacity: 0
+.img-active
+    opacity: 1 !important
