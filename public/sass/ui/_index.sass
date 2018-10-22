@@ -33,6 +33,8 @@
                                 color: #999
                                 padding: 0 10px
                                 transition: all .3s ease-in-out
+                                &:hover 
+                                    color: #af996b
                     
 .main .row
     margin-left: 0
@@ -109,6 +111,7 @@
     display: flex
     align-items: center
     height: 52px
+    transition: width 400ms ease-in-out
 .menu-main-menu
     display: flex
     .menu-item-home
@@ -128,6 +131,8 @@
                 margin-left: 10px
         &:nth-child(n+2) a 
             color: #222
+            &:hover 
+                color: #af996b
     #homemenu
         max-width: 72px
         width: 100%
@@ -139,6 +144,8 @@
 .main-menu-env
     display: flex
     border-top: 1px solid #eee
+    background-color: #fff
+    width: 100%
 .menu-search
     position: relative
     padding-top: 15px
@@ -309,6 +316,17 @@
             position: relative
             background-color: #fff
             box-shadow: 0 0 2px rgba(204, 204, 204, .5)
+            &:hover div
+                opacity: 1
+            &:hover div:after
+                opacity: 1
+            & img:nth-child(n+2)
+                position: absolute
+                top: 0
+                opacity: 0
+                transition: all 500ms ease-in-out
+            &:hover img:nth-child(n+2)
+                opacity: 2
         &-info
             padding: 20px
             position: relative
@@ -376,6 +394,8 @@
     transform: rotate(90deg)
     transform-origin: top left
 .icon-wishlist:after
+    opacity: 0
+    transition: all 200ms ease-in-out
     cursor: pointer
     font-family: FontAwesome
     position: absolute
@@ -385,6 +405,8 @@
     content: "\f004"
     font-size: 16px
 .icon-quickview:after
+    opacity: 0
+    transition: all 200ms ease-in-out
     cursor: pointer
     font-family: FontAwesome
     position: absolute
@@ -394,10 +416,12 @@
     padding-right: 5px
     border-radius: 4px
     color: #fff 
-    background: #c1b08c
+    background: #af996b
     content: "\f06e  view"
     font-size: 12px
 .icon-rating 
+    opacity: 0
+    transition: all 200ms ease-in-out
     position: absolute
     right: 10px
     bottom: 10%
@@ -510,6 +534,7 @@
             display: flex
             flex-direction: column
             &-sub
+                cursor: pointer
                 display: flex
                 padding-top: 15px
                 padding-bottom: 15px

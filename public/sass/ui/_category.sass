@@ -1,0 +1,152 @@
+.page-head-title
+    padding-top: 40px
+.header-ordering
+    padding-top: 20px
+    position: relative
+    display: flex
+    .header-ordering-dropdown
+        margin-bottom: 15px
+        .dropdown-toggle
+            cursor: pointer
+            padding: 12px
+            background: #eeeeee
+            line-height: 1
+            border: 0
+            font-size: 14px
+    & ul 
+        display: none
+        position: absolute
+        left: 0
+        top: 54px
+        padding: 0
+        border: 1px solid #eee
+        & li 
+            cursor: pointer
+            padding: 10px
+            &:hover
+                background-color: #eeeeee
+        & .li-active
+            background-color: #eeeeee
+    & p 
+        margin: 7px 0
+        margin-left: 10px
+        font-weight: 400
+        font-size: 16px
+        color: #666 
+.cate-grid
+    display: grid
+    grid-gap: 15px
+    grid-template-rows: auto
+    grid-template-columns: repeat(4, minmax(201px, 1fr))
+    max-width: 100%
+    .cate-grid-items
+        margin-top: 10px
+        & .feature-column-inner-content-item-img
+            width: 100%
+            position: relative
+            background-color: #fff
+            box-shadow: 0 0 2px rgba(204, 204, 204, .5)
+            height: auto
+            & img
+                width: 100%
+                height: auto
+            &:hover div
+                opacity: 1
+            &:hover div:after
+                opacity: 1
+            & img:nth-child(n+2)
+                position: absolute
+                top: 0
+                opacity: 0
+                transition: all 500ms ease-in-out
+            &:hover img:nth-child(n+2)
+                opacity: 2
+        &-info
+            padding: 20px
+            position: relative
+            & h2 
+                margin: 0
+                font-size: 18px
+                font-weight: 400
+                line-height: 1.1
+            & .content-item-info-cate
+                margin-top: 5px
+                font-size: 12px
+                & a
+                    cursor: pointer
+                    color: #ccc
+                    transition: all 350ms ease-in-out
+            & .price
+                color: #af996b
+                font-size: 17px
+                & del 
+                    color: #666
+                    font-size: 13px
+                    margin-left: 5px
+                    font-weight: 400
+                & ins
+                    text-decoration: none
+            & .add-to-card
+                cursor: pointer
+                position: absolute
+                right: 27px
+                &:before
+                    font-family: FontAwesome
+                    content: "\f217"
+                    font-size: 18px
+.cate-li-flex
+    display: flex
+    justify-content: space-between
+    span 
+        color: #666
+li.cate-li-flex
+    padding: 8px 0px 8px 10px !important
+    border-bottom: none !important
+    & a,span 
+        font-size: 13px !important
+.soderbar-product-cate
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    .grid-index-item
+        padding-top: 22px
+        width: 100%
+        &-title h3 
+            border-bottom: 1px solid #eee 
+            margin: 0
+            padding-bottom: 20px
+            font-size: 20px
+            word-break: break-word
+            color: #222
+            font-weight: 400
+            line-height: 1.1
+        &-content
+            padding: 0
+            margin-bottom: 0
+            display: flex
+            flex-direction: column
+            &-sub
+                cursor: pointer
+                display: flex
+                padding-top: 15px
+                padding-bottom: 15px
+                & .price
+                    color: #af996b
+                    font-size: 13px
+                    & del 
+                        color: #666
+                        font-size: 11px
+                        margin-left: 5px
+                        font-weight: 400
+                    & ins
+                        text-decoration: none
+                &-title
+                    padding: 0 10px
+                    & h6 
+                        margin: 0
+                        font-size: 14px
+                        font-weight: 400
+                        margin-bottom: 10px
+.row.custom-3
+    max-width: 1140px
+    margin: auto
