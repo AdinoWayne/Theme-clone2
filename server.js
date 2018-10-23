@@ -21,6 +21,21 @@ server.get("/blog", (req, res) => {
 server.get("/category", (req, res) => {
   res.sendFile(__dirname + "/public/category.html")
 })
+server.get("/cart", (req, res) => {
+  res.sendFile(__dirname + "/public/cart.html")
+})
+server.get("/login", (req, res) => {
+  res.sendFile(__dirname + "/public/login.html")
+})
+server.get("/signup", (req, res) => {
+  res.sendFile(__dirname + "/public/signup.html")
+})
+server.get("/account", (req, res) => {
+  res.sendFile(__dirname + "/public/account.html")
+})
+server.get("/contact-us", (req, res) => {
+  res.sendFile(__dirname + "/public/contact-us.html")
+})
 server.listen(server.get('port'), (req, res) => {
   console.log("Server is running on port %s...", server.get('port'));
 })

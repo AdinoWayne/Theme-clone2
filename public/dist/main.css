@@ -472,14 +472,16 @@
 
 .submenu {
   position: absolute;
-  width: 120px;
+  width: 220px;
   top: 40px;
   border: 1px solid #D7D7D7;
   cursor: pointer;
   background-color: #fff; }
   .submenu div {
+    border-bottom: 1px dashed #eee;
     padding: 10px; }
     .submenu div:hover {
+      background-color: #f4f4f4;
       color: #af996b;
       transition: all 250ms ease-in-out; }
 
@@ -892,9 +894,9 @@
     .footer-big .footer-widgets .col-sm-3 {
       flex: 0 0 25%;
       padding: 10px; }
-      .footer-big .footer-widgets .col-sm-3 .footer-title {
-        font-size: 14px;
-        font-weight: 100;
+      .footer-big .footer-widgets .col-sm-3 .footer-title h3 {
+        font-size: 20px;
+        font-weight: 400;
         line-height: 1.1;
         margin: 19px 0 19px 0; }
       .footer-big .footer-widgets .col-sm-3 .widget-menu a {
@@ -1531,6 +1533,490 @@ li.cate-li-flex {
 .row.custom-3 {
   max-width: 1140px;
   margin: auto; }
+
+.cart-td-quantity .quantity {
+  display: flex;
+  width: 120px;
+  margin-right: 10px;
+  position: relative;
+  height: 35px; }
+  .cart-td-quantity .quantity .plusminus {
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+    width: 35px;
+    position: relative;
+    background: #af996b;
+    opacity: 0.8;
+    transition: all 200ms ease-in-out; }
+    .cart-td-quantity .quantity .plusminus:hover {
+      background-color: #9A620E; }
+    .cart-td-quantity .quantity .plusminus i {
+      top: 30%;
+      left: 33%;
+      position: absolute; }
+  .cart-td-quantity .quantity input {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    max-width: 50px;
+    border: none;
+    background-color: #af996b; }
+
+.cart-td-quantity button {
+  cursor: pointer;
+  width: 120px;
+  background-color: #af996b;
+  color: #fff;
+  font-size: 13px;
+  transition: all 200ms ease-in-out; }
+  .cart-td-quantity button i {
+    color: #fff;
+    margin-right: 5px; }
+  .cart-td-quantity button:hover {
+    background-color: #9A620E; }
+
+.page-head-sub-title {
+  color: #666;
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 300; }
+
+.cart-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  flex-direction: column;
+  padding: 10px; }
+  .cart-wrapper .cart-table {
+    width: 100%; }
+    .cart-wrapper .cart-table thead {
+      color: #666;
+      border-bottom: 1px solid #666; }
+      .cart-wrapper .cart-table thead tr th {
+        font-size: 13px;
+        font-weight: 400;
+        text-align: left; }
+    .cart-wrapper .cart-table tbody .cart-td-remove {
+      max-width: 12px; }
+      .cart-wrapper .cart-table tbody .cart-td-remove i {
+        font-size: 26px;
+        color: #666; }
+        .cart-wrapper .cart-table tbody .cart-td-remove i:hover {
+          color: #af996b; }
+    .cart-wrapper .cart-table tbody .cart-td-thumbnail {
+      max-width: 70px;
+      overflow: hidden; }
+      .cart-wrapper .cart-table tbody .cart-td-thumbnail img {
+        cursor: pointer;
+        max-width: 100%;
+        max-height: 100%;
+        transition: all 300ms ease-in-out; }
+        .cart-wrapper .cart-table tbody .cart-td-thumbnail img:hover {
+          transform: scale(1.1); }
+    .cart-wrapper .cart-table tbody .cart-td-name, .cart-wrapper .cart-table tbody .cart-td-price, .cart-wrapper .cart-table tbody .cart-td-total {
+      font-size: 14px;
+      font-weight: 400; }
+
+.cart-collaterals {
+  width: 100%; }
+  .cart-collaterals .cart-totals {
+    padding: 10px;
+    max-width: 450px;
+    width: 100%;
+    float: right;
+    border: 1px solid #eee; }
+    .cart-collaterals .cart-totals .cart-totals-group {
+      border-top: 1px solid #eee; }
+  .cart-collaterals h3 {
+    font-size: 16px;
+    color: #666;
+    font-weight: 300; }
+  .cart-collaterals .cart-total-item-value {
+    font-size: 14px;
+    font-weight: 400; }
+    .cart-collaterals .cart-total-item-value span {
+      padding-left: 5px; }
+  .cart-collaterals h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: 300; }
+  .cart-collaterals .cart-totals-item {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between; }
+  .cart-collaterals .cart-totals-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around; }
+    .cart-collaterals .cart-totals-button button {
+      width: 40%;
+      padding: 10px;
+      position: relative;
+      color: #fff;
+      cursor: pointer;
+      overflow: hidden;
+      font-size: 14px;
+      transition: all 300ms ease-in-out;
+      transition-delay: 200ms;
+      border-radius: 17px;
+      z-index: 20; }
+      .cart-collaterals .cart-totals-button button:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: -10; }
+      .cart-collaterals .cart-totals-button button:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
+    .cart-collaterals .cart-totals-button-update {
+      background-color: #af996b; }
+    .cart-collaterals .cart-totals-button-checkout {
+      background-color: #000; }
+    .cart-collaterals .cart-totals-button i {
+      padding-left: 10px; }
+
+.login-flex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 150px; }
+  .login-flex .login-content {
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid #eee; }
+    .login-flex .login-content h2 {
+      border-bottom: 1px solid #eee;
+      text-align: center;
+      padding-bottom: 15px;
+      font-size: 17px;
+      display: block;
+      font-weight: 400;
+      line-height: 1.1; }
+    .login-flex .login-content .form-login {
+      padding: 10px;
+      color: #666; }
+      .login-flex .login-content .form-login-user, .login-flex .login-content .form-login-password {
+        width: 100%;
+        padding-bottom: 18px; }
+      .login-flex .login-content .form-login label {
+        padding-left: 10px;
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.3;
+        margin-bottom: 5px; }
+      .login-flex .login-content .form-login input {
+        outline: 0;
+        width: 100%;
+        line-height: 1.1;
+        font-size: 16px;
+        padding: 7px;
+        padding-left: 15px;
+        border-radius: 18px;
+        background-color: #f4f4f4;
+        border: 0; }
+        .login-flex .login-content .form-login input:hover {
+          background-color: #eee; }
+      .login-flex .login-content .form-login-remember {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px; }
+        .login-flex .login-content .form-login-remember label {
+          width: 170px;
+          cursor: pointer; }
+          .login-flex .login-content .form-login-remember label input {
+            width: auto !important;
+            margin-top: 0 !important;
+            padding: 0 !important;
+            vertical-align: text-top; }
+          .login-flex .login-content .form-login-remember label:hover {
+            color: #af996b; }
+        .login-flex .login-content .form-login-remember button {
+          cursor: pointer;
+          border-radius: 18px;
+          width: 120px;
+          background-color: #af996b;
+          color: #fff;
+          font-size: 15px;
+          padding-top: 7px;
+          font-weight: 300;
+          padding-bottom: 7px;
+          transition: all 200ms ease-in-out; }
+          .login-flex .login-content .form-login-remember button:hover {
+            background-color: #9A620E; }
+      .login-flex .login-content .form-login-forgetpass a {
+        font-size: 16px;
+        font-weight: 400;
+        color: #666; }
+        .login-flex .login-content .form-login-forgetpass a:hover {
+          color: #af996b; }
+  .login-flex .login-by-social {
+    max-width: 363px;
+    width: 100%; }
+    .login-flex .login-by-social div {
+      margin-bottom: 10px; }
+    .login-flex .login-by-social button {
+      cursor: pointer;
+      border: 0;
+      color: #fff;
+      padding: 20px;
+      width: 100%;
+      font-size: 17px;
+      position: relative;
+      overflow: hidden;
+      transition: all 200ms ease-in-out;
+      z-index: 20; }
+      .login-flex .login-by-social button:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: -10; }
+      .login-flex .login-by-social button:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
+      .login-flex .login-by-social button i {
+        padding-right: 10px; }
+    .login-flex .login-by-social-facebook button {
+      background-color: #3b5998; }
+    .login-flex .login-by-social-twitter button {
+      background-color: #00aced; }
+    .login-flex .login-by-social-google button {
+      background-color: #dd4b39; }
+
+.required {
+  color: #e60611; }
+
+.account-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px; }
+  .account-content-menu {
+    flex: 0 0 25%;
+    border-right: 1px dashed #af996b; }
+    .account-content-menu-wrapper {
+      padding: 20px; }
+      .account-content-menu-wrapper ul {
+        padding: 0; }
+        .account-content-menu-wrapper ul li {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #eee;
+          transition: all 300ms ease-in-out; }
+          .account-content-menu-wrapper ul li a {
+            font-size: 14px;
+            font-weight: 400; }
+          .account-content-menu-wrapper ul li:hover {
+            border-bottom-color: #af996b; }
+  .account-content-main {
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 23px;
+    font-size: 15px;
+    font-weight: 400; }
+    .account-content-main h1, .account-content-main h2, .account-content-main h3, .account-content-main h4, .account-content-main h5, .account-content-main h6 {
+      font-size: 17px;
+      font-weight: 400; }
+
+.account-content-main-section2 {
+  margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  .account-content-main-section2 table {
+    width: 100%; }
+  .account-content-main-section2 tr {
+    margin-bottom: 0; }
+    .account-content-main-section2 tr th {
+      font-size: 14.5px;
+      padding-bottom: 20px;
+      border-bottom-width: 2px;
+      padding: 10px 0;
+      border-bottom: 2px solid #eee;
+      font-weight: 400;
+      text-align: left; }
+  .account-content-main-section2 tbody tr td {
+    border-bottom: 1px dashed #eee;
+    padding: 10px 0;
+    font-size: 13px; }
+  .account-content-main-section2 button {
+    cursor: pointer;
+    padding: 10px;
+    width: 60px;
+    color: #fff;
+    background-color: #af996b;
+    transition: all 400ms ease-in-out; }
+    .account-content-main-section2 button:hover {
+      background-color: #fff;
+      color: #af996b;
+      border: 1px dashed #af996b; }
+
+.account-content-main-section3 {
+  margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  .account-content-main-section3 .form-account-user {
+    width: 100%;
+    padding-bottom: 18px; }
+  .account-content-main-section3 label {
+    color: #666;
+    padding-left: 10px;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 5px; }
+  .account-content-main-section3 input {
+    outline: 0;
+    width: 100%;
+    line-height: 1.1;
+    font-size: 15px;
+    padding: 7px;
+    padding-left: 15px;
+    background-color: #f4f4f4;
+    border: 0; }
+    .account-content-main-section3 input:hover {
+      background-color: #eee; }
+  .account-content-main-section3 textarea {
+    padding-left: 15px;
+    outline: 0;
+    border: 0;
+    line-height: 1.1;
+    font-size: 15px;
+    width: 100%;
+    background-color: #f4f4f4; }
+    .account-content-main-section3 textarea:hover {
+      background-color: #eee; }
+  .account-content-main-section3 button {
+    cursor: pointer;
+    width: 180px;
+    background-color: #af996b;
+    color: #fff;
+    font-size: 15px;
+    padding-top: 7px;
+    font-weight: 300;
+    padding-bottom: 7px;
+    transition: all 200ms ease-in-out; }
+    .account-content-main-section3 button:hover {
+      background-color: #9A620E; }
+  .account-content-main-section3 h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee; }
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .contact-content-form {
+    flex: 0 0 35%; }
+    .contact-content-form-address {
+      border: 1px solid #eee;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .contact-content-form-address-store {
+        padding: 30px; }
+        .contact-content-form-address-store .contact-address ul {
+          padding: 0;
+          padding-top: 15px; }
+          .contact-content-form-address-store .contact-address ul li {
+            font-size: 15px;
+            font-weight: 400;
+            padding-top: 5px;
+            padding-bottom: 5px; }
+    .contact-content-form-contact {
+      margin-top: 20px;
+      border: 1px solid #eee;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .contact-content-form-contact .contact-content-item {
+        padding: 30px; }
+        .contact-content-form-contact .contact-content-item .form-contact {
+          margin-top: 20px; }
+          .contact-content-form-contact .contact-content-item .form-contact-user {
+            width: 100%;
+            padding-bottom: 18px; }
+          .contact-content-form-contact .contact-content-item .form-contact label {
+            padding-left: 10px;
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 5px; }
+          .contact-content-form-contact .contact-content-item .form-contact input {
+            outline: 0;
+            width: 100%;
+            line-height: 1.1;
+            font-size: 16px;
+            padding: 7px;
+            padding-left: 15px;
+            background-color: #f4f4f4;
+            border: 0; }
+            .contact-content-form-contact .contact-content-item .form-contact input:hover {
+              background-color: #eee; }
+          .contact-content-form-contact .contact-content-item .form-contact textarea {
+            padding-left: 15px;
+            outline: 0;
+            border: 0;
+            line-height: 1.1;
+            font-size: 16px;
+            width: 100%;
+            background-color: #f4f4f4; }
+            .contact-content-form-contact .contact-content-item .form-contact textarea:hover {
+              background-color: #eee; }
+          .contact-content-form-contact .contact-content-item .form-contact button {
+            cursor: pointer;
+            width: 80px;
+            background-color: #af996b;
+            color: #fff;
+            font-size: 15px;
+            padding-top: 7px;
+            font-weight: 300;
+            padding-bottom: 7px;
+            transition: all 200ms ease-in-out; }
+            .contact-content-form-contact .contact-content-item .form-contact button:hover {
+              background-color: #9A620E; }
+  .contact-content h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee; }
+  .contact-content-info {
+    margin-left: 20px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .contact-content-info-center {
+      padding: 30px; }
+      .contact-content-info-center p {
+        font-size: 14px;
+        font-weight: 300; }
 
 body {
   margin: 0;
