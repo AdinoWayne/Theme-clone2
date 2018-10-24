@@ -1079,6 +1079,11 @@
   .sub-menu li:last-child a {
     border-bottom: none; }
 
+.slider img {
+  width: 100%;
+  height: auto;
+  max-height: 600px; }
+
 .custom-4 .main {
   padding-top: 20px; }
   .custom-4 .main .single-product-wrapper {
@@ -1336,6 +1341,13 @@
 
 @media screen and (max-width: 790px) and (min-width: 700px) {
   .grid-index-wrapper .grid-index-item {
+    flex: 0 0 48%; } }
+
+@media screen and (max-width: 903px) {
+  .feature-column-inner-content {
+    flex-wrap: wrap; }
+  .feature-column-inner-content-item {
+    max-width: 48%;
     flex: 0 0 48%; } }
 
 .page-head-title {
