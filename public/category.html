@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/dist/main.css">
     <link rel="stylesheet" href="/dist/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
     <link rel="stylesheet" href="/dist/slick.css">
     <link rel="stylesheet" href="/dist/slick-theme.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
@@ -123,8 +124,51 @@
             </div>
         </div>
     </header>
+    <header id="luxbar" class="luxbar-fixed">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-light">
+            <ul class="luxbar-navigation">
+                <li class="luxbar-header">
+                    <div class="logo">
+                        <span><a href="/">OXYGEN</a></span>
+                    </div>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox">
+                        <span></span> </label>
+                </li>
+                <li class="luxbar-item">
+                    <div class="menu-search">
+                        <div class="search-icon"></div><input class="input-search" />
+                    </div>
+                </li>
+                <li class="luxbar-item"><a href="#home"><span>Home</span><span class="nm-menu-toggle"></span></a></li>
+                <li class="luxbar-item"><a href="#news"><span>Shop</span><span class="nm-menu-toggle sub-li"><i class="fas fa-hand-paper"></i></span></a>
+                    <ul class="sub-menu">
+                        <li class="luxbar-item"><a>Shop Full Width</a></li>
+                        <li class="luxbar-item"><a>Shop With Sidebar</a></li>
+                        <li class="luxbar-item"><a>Single Product</a></li>
+                        <li class="luxbar-item"><a>Grouped product</a></li>
+                        <li class="luxbar-item"><a>Varible Product</a></li>
+                        <li class="luxbar-item"><a>External Product</a></li>
+                    </ul>
+                </li>
+                <li class="luxbar-item"><a href="#contact"><span>Layouts</span><span class="nm-menu-toggle"></span></a></li>
+                <li class="luxbar-item"><a href="#about"><span>Pages</span><span class="nm-menu-toggle"><i class="fas fa-hand-paper"></i></span></a>
+                    <ul class="sub-menu">
+                        <li class="luxbar-item"><a>Contact Us</a></li>
+                        <li class="luxbar-item"><a>F.A.Q</a></li>
+                        <li class="luxbar-item"><a>Search Result</a></li>
+                        <li class="luxbar-item"><a>Checkout</a></li>
+                        <li class="luxbar-item"><a>Cart</a></li>
+                        <li class="luxbar-item"><a>My Account</a></li>
+                    </ul>
+                </li>
+                <li class="luxbar-item"><a href="#about"><span>Blog</span><span class="nm-menu-toggle"></span></a></li>
+                <li class="luxbar-item"><a href="#about"><span>Cart</span><span class="nm-menu-toggle"></span></a></li>
+            </ul>
+        </div>
+    </header>
     <section class="body">
-        <div class="main">
+        <div class="main mobile">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-head-title">Shop</h1>

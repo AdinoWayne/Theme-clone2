@@ -143,6 +143,7 @@
             display: none
 .main-menu-env
     display: flex
+    flex-wrap: wrap
     border-top: 1px solid #eee
     background-color: #fff
     width: 100%
@@ -159,12 +160,15 @@
         font-weight: 100
         font-size: 14px
     .input-search
+        cursor: pointer
         line-height: 20px
         border: 1px solid #D7D7D7
         border-radius: 13px
         font-size: 16px
         outline: none
         padding-left: 20px
+        &:focus
+            border: 1px solid #af996b
 .submenu
     position: absolute
     width: 220px
@@ -243,15 +247,21 @@
                 overflow: hidden
                 text-align: center
                 & img
+                    width: 100%
+                    height: 100%
                     transition: all .4s
                 &:hover img 
                     transform: scale(1.1)
             &-span
                 background: #fff
+                opacity: 0.7
                 color: #222
                 position: absolute
-                left: 27%
-                top: 32%
+                left: 0
+                right: 0
+                top: 20%
+                margin-left: auto
+                margin-right: auto
                 padding: 20px
                 border: 2px solid rgba(255, 255, 255, .5)
                 font-size: 20px
@@ -279,7 +289,6 @@
         margin-right: auto
         display: flex
         flex-direction: row
-        flex-wrap: nowrap
         align-items: center
         margin-bottom: 35px
         margin-top: 35px
@@ -308,6 +317,7 @@
         flex: 0 1 auto
 .feature-column-inner-content
     display: flex
+    justify-content: center
     &-item
         margin-top: 10px
         flex: 0 0 25%
@@ -325,10 +335,14 @@
             & img:nth-child(n+2)
                 position: absolute
                 top: 0
+                left: 0
                 opacity: 0
                 transition: all 500ms ease-in-out
             &:hover img:nth-child(n+2)
                 opacity: 2
+            & img 
+                width: 100%
+                height: 100%
         &-info
             padding: 20px
             position: relative
@@ -517,6 +531,7 @@
 .grid-index-wrapper
     display: flex
     flex-direction: row
+    flex-wrap: wrap
     justify-content: space-around
     .grid-index-item
         flex: 0 0 25%
@@ -580,21 +595,55 @@
                 display: block
                 padding: 5px
 .div
-    display: fixed
     width: 100%
     height: 80px
-    background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0))
+    display: flex
+    justify-content: center
+    background: linear-gradient(0deg, #FFC0A8, #A8D4FF, #FFFA51, #BE6DE3, #9B81CF)
+    background-size: 1000% 1000%
+    -webkit-animation: adino 40s ease infinite
+    -moz-animation: adino 40s ease infinite
+    animation: adino 40s ease infinite
     position: relative
     & button
         cursor: pointer
-        position: absolute
-        left: 43%
-        top: 20px
         padding: 10px
+        margin: 15px
         font-size: 18px
         background: #222 
         color: #fff
         border: none
+@-webkit-keyframes adino
+  0%
+    background-position: 62% 0%
+
+  50%
+    background-position: 39% 100%
+
+  100%
+    background-position: 62% 0%
+
+
+@-moz-keyframes adino
+  0%
+    background-position: 62% 0%
+
+  50%
+    background-position: 39% 100%
+
+  100%
+    background-position: 62% 0%
+
+
+@keyframes adino
+  0%
+    background-position: 62% 0%
+
+  50%
+    background-position: 39% 100%
+
+  100%
+    background-position: 62% 0%
 .footer-container
     margin-top: 30px
     margin-bottom: 30px
@@ -607,3 +656,107 @@
         padding-right: 10px
         &:hover
             color: #af996b
+#luxbar
+    display: none
+.luxbar-item .menu-search
+    padding: 15px
+    & input 
+        padding: 3px 0 3px 20px !important
+        width: 100% !important
+    & .search-icon:before
+        left: 19px !important
+        top: 19px !important
+@media screen and (max-width: 700px)
+    #luxbar
+        display: block
+    .logo
+        width: 130px !important
+        height: 100%
+        padding-left: 10px
+        & span 
+            display: block
+    .header
+        display: none
+    .luxbar-fixed
+      box-shadow: none
+      .luxbar-checkbox:checked ~.luxbar-menu
+        height: auto
+      .luxbar-menu-light
+        color: #777777
+        background-color: white
+        .luxbar-navigation
+          .luxbar-header
+            .logo-mobile
+              margin-left: 20px
+              h3 
+                font-size: 24px
+                color: #282828
+                letter-spacing: 4px
+          .luxbar-item
+            position: relative
+            display: contents
+            & a
+                border-top: 1px dashed #eee
+            .sub-menu
+              padding-left: 0
+            .nm-menu-toggle
+              float: right
+    .footer-big
+        font-size: 15px
+    .col-sm-12.mobile
+        padding: 0
+    .index
+        flex-direction: column
+    #luxbar
+        display: block
+    .logo
+        width: 130px !important
+        height: 100%
+        padding-left: 10px
+        & span 
+            display: block
+    .header
+        display: none
+    .luxbar-fixed
+      box-shadow: none
+      .luxbar-checkbox:checked ~.luxbar-menu
+        height: auto
+      .luxbar-menu-light
+        color: #777777
+        background-color: white
+        .luxbar-navigation
+          .luxbar-header
+            .logo-mobile
+              margin-left: 20px
+              h3 
+                font-size: 24px
+                color: #282828
+                letter-spacing: 4px
+          .luxbar-item
+            position: relative
+            display: contents
+            & a
+                border-top: 1px dashed #eee
+            .sub-menu
+              padding-left: 0
+            .nm-menu-toggle
+              float: right
+    .page-container
+        padding: 0 
+        .index-category
+            padding-left: 0
+            padding-right: 0
+            .index-category-wrapper img 
+                width: 100%
+.sub-menu.active
+    display: block
+.sub-menu
+    display: none
+    // position: absolute
+    z-index: 4000
+    background-color: #282828
+    color: white
+    & li a
+        border-bottom: 1px dashed #fff
+    & li:last-child a
+        border-bottom: none 

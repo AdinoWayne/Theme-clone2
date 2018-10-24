@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/dist/all.min.css">
     <link rel="stylesheet" href="/dist/slick.css">
     <link rel="stylesheet" href="/dist/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700,700i&amp;subset=vietnamese"
@@ -123,8 +124,47 @@
             </div>
         </div>
     </header>
+    <header id="luxbar" class="luxbar-fixed">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-light">
+          <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+              <div class="logo">
+                <span><a href="/">OXYGEN</a></span>
+              </div>
+              <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox">
+                <span></span> </label>
+            </li>
+            <li class="luxbar-item"><div class="menu-search"><div class="search-icon"></div><input class="input-search" /></div></li>
+            <li class="luxbar-item"><a href="#home"><span>Home</span><span class="nm-menu-toggle"></span></a></li>
+            <li class="luxbar-item"><a href="#news"><span>Shop</span><span class="nm-menu-toggle sub-li"><i class="fas fa-hand-paper"></i></span></a>
+              <ul class="sub-menu">
+                <li class="luxbar-item"><a>Shop Full Width</a></li>
+                <li class="luxbar-item"><a>Shop With Sidebar</a></li>
+                <li class="luxbar-item"><a>Single Product</a></li>
+                <li class="luxbar-item"><a>Grouped product</a></li>
+                <li class="luxbar-item"><a>Varible Product</a></li>
+                <li class="luxbar-item"><a>External Product</a></li>
+              </ul>
+            </li>
+            <li class="luxbar-item"><a href="#contact"><span>Layouts</span><span class="nm-menu-toggle"></span></a></li>
+            <li class="luxbar-item"><a href="#about"><span>Pages</span><span class="nm-menu-toggle"><i class="fas fa-hand-paper"></i></span></a>
+              <ul class="sub-menu">
+                <li class="luxbar-item"><a>Contact Us</a></li>
+                <li class="luxbar-item"><a>F.A.Q</a></li>
+                <li class="luxbar-item"><a>Search Result</a></li>
+                <li class="luxbar-item"><a>Checkout</a></li>
+                <li class="luxbar-item"><a>Cart</a></li>
+                <li class="luxbar-item"><a>My Account</a></li>
+              </ul>
+            </li>
+            <li class="luxbar-item"><a href="#about"><span>Blog</span><span class="nm-menu-toggle"></span></a></li>
+            <li class="luxbar-item"><a href="#about"><span>Cart</span><span class="nm-menu-toggle"></span></a></li>
+          </ul>
+        </div>
+    </header>
     <section class="body">
-        <div class="main">
+        <div class="main mobile">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-head-title">Contact Us</h1>
@@ -135,11 +175,10 @@
                     <div class="account-content-menu">
                         <div class="account-content-menu-wrapper">
                             <ul>
-                                <li><a href="#">Dashboard</a></li>
-                                <li><a href="#">Orders</a></li>
-                                <li><a href="#">Addresses</a></li>
-                                <li><a href="#">Account details</a></li>
-                                <li><a href="#">Account details</a></li>
+                                <li class="id1"><a href="#">Dashboard</a></li>
+                                <li class="id2"><a href="#">Orders</a></li>
+                                <li class="id3"><a href="#">Addresses</a></li>
+                                <li class="id4"><a href="#">Account details</a></li>
                             </ul>
                         </div>
                     </div>
@@ -196,7 +235,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="account-content-main-section3 opacity" style="display: block;">
+                        <div class="account-content-main-section3 opacity" style="display: none;">
                             <div class="form-account-user">
                                 <label>First name<span class="required">*</span></label>
                                 <input type="text" class="input-user" />
@@ -218,9 +257,50 @@
                                 <label>Confirm password<span class="required">*</span></label>
                                 <input type="password" class="input-user" />
                             </div>
-                            <div class="form-account-remember">
+                            <div class="form-account-button">
                                 <button type="button">Save changes</button>
                             </div>
+                        </div>
+                        <div class="account-content-main-section4 opacity" style="display: none;">
+                            <h3>Address</h3>
+                            <div class="form-account-button">
+                                <button type="button">Edit</button>
+                            </div>
+                            <div class="account-address">
+                                <ul>
+                                    <li>EGF</li>
+                                    <li>Uttam Biswas</li>
+                                    <li>Str. New Avenue No.5</li>
+                                    <li>5000 Moscow</li>
+                                    <li>IceLand</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="account-content-main-section5 opacity" style="display: block;">
+                            <p class="section5-info">
+                                Order <mark>#2442</mark> was placed on <mark>September 17, 2018</mark> and is currently <mark>Cancelled</mark>.
+                            </p>
+                            <h4>Order details</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="order-table-product-name">Product</th>
+                                        <th class="order-table-product-total">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="order-table-product-name"><a href="#">Fashion Sweater </a><strong class="product-quantity">× 1</strong></td>
+                                        <td class="order-table-product-total"><span>20.000 vnd</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr><th scope="row">Subtotal :</th><td>20.000 vnd</td></tr>
+                                    <tr><th scope="row">Shipping :</th><td>10.000 vnd</td></tr>
+                                    <tr><th scope="row">Payment method :</th><td>PayPal</td></tr>
+                                    <tr><th scope="row" class="td-total">Total:</th><td class="td-total">20.000 vnd</td></tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -301,6 +381,22 @@
 
 <script>
     $(document).ready(function () {
+        $('.id1').click(function() {
+            $('.opacity').css("display", "none");
+            $('.account-content-main-section1').css("display","block")
+        })
+        $('.id2').click(function() {
+            $('.opacity').css("display", "none");
+            $('.account-content-main-section2').css("display","block")
+        })
+        $('.id3').click(function() {
+            $('.opacity').css("display", "none");
+            $('.account-content-main-section3').css("display","block")
+        })
+        $('.id4').click(function() {
+            $('.opacity').css("display", "none");
+            $('.account-content-main-section4').css("display","block")
+        })
     });
 </script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

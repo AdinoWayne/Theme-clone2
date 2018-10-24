@@ -63,7 +63,7 @@
                 text-align: left
         & tbody 
             .cart-td-remove 
-                max-width: 12px
+                max-width: 20px
                 & i
                     font-size: 26px
                     color: #666
@@ -155,8 +155,25 @@
             background-color: #000
         & i 
             padding-left: 10px
-                
-
+@media screen and (max-width: 500px)
+    .cart-wrapper .cart-table tbody .cart-td-thumbnail img
+        height: auto
+    .cart-td-quantity .quantity
+        width: 35px !important
+        margin-right: 0 !important
+        flex-direction: column
+        .plusminus
+            padding: 15px 0 15px 0 !important
+        & input 
+            height: 35px
+    .cart-td-quantity
+        vertical-align: initial
+@media screen and (max-width: 440px)
+    .cart-td-price
+        display: none
+    .price-moblie
+        display: none
+    
 
             
 

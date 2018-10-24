@@ -35,6 +35,7 @@
     border-spacing: 0
     & table 
         width: 100%
+        border-collapse: collapse
     & tr 
         margin-bottom: 0
         & th 
@@ -46,9 +47,13 @@
             font-weight: 400 
             text-align: left
     & tbody tr td
-        border-bottom: 1px dashed #eee
         padding: 10px 0
         font-size: 13px
+    & tbody tr
+        border-bottom: 1px dashed #eee
+        transition: all 300ms ease-in-out
+        &:hover 
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)
     & button
         cursor: pointer
         padding: 10px
@@ -116,5 +121,92 @@
         padding-bottom: 20px
         margin-bottom: 20px
         border-bottom: 1px solid rgb(238, 238, 238)
-
-                    
+.account-content-main-section4
+    & button
+        cursor: pointer
+        width: 80px
+        background-color: #af996b
+        color: #fff
+        font-size: 15px
+        padding-top: 7px
+        font-weight: 300
+        padding-bottom: 7px
+        transition: all 200ms ease-in-out
+        &:hover
+            background-color: #9A620E
+    & h3 
+        margin: 0
+        font-size: 17px
+        font-weight: 400
+        padding-bottom: 20px
+        margin-bottom: 20px
+        border-bottom: 1px solid rgb(238, 238, 238)
+    & ul 
+        padding: 0
+        & li 
+            padding-top: 6px
+            padding-bottom: 6px
+.account-content-main-section5
+    & p 
+        margin-left: 0
+        margin-right: 0
+        display: block
+        font-weight: 400
+        background-color: #00aeef
+        padding: 15px
+        color: #fff 
+        text-align: center
+        margin-bottom: 20px
+        font-size: 16px
+        & mark 
+            padding: 1px 4px
+            background-color: rgba(255, 255, 255, .3)
+            color: #fff 
+            font-weight: 400
+    & h4
+        border-bottom: 1px solid #eee
+        padding-bottom: 15px
+        font-weight: 400
+    & table 
+        border-collapse: collapse
+        max-width: 100%
+        width: 100%
+        margin-bottom: 20px
+        margin: 0
+    & .order-table-product-name
+        font-weight: 400
+        padding: 10px 0 
+        border-bottom: 1px solid #eee 
+        vertical-align: top
+        font-size: 15px
+        text-align: left
+    & .order-table-product-total
+        font-weight: 400
+        text-align: right
+        padding: 10px 0 
+        border-bottom: 1px solid #eee 
+        vertical-align: top
+        font-size: 15px
+    & tbody td 
+        border-bottom-color: #222 !important
+    & tfoot th,td 
+        font-weight: 400
+        border-bottom: 1px solid #eee
+    & tfoot tr 
+        padding: 10px 0 
+        text-align: left
+    & tfoot td 
+        padding: 10px 0 
+        text-align: right
+.td-total
+    font-size: 16px
+    color: #af996b
+@media screen and (max-width: 700px)
+    .account-content
+        flex-direction: column !important
+    .account-content-main
+        margin-left: 0 !important
+        padding-right: 10px
+        padding-left: 10px
+    .account-content-menu
+        border-right: none

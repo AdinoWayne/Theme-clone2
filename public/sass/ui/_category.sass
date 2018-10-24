@@ -150,3 +150,18 @@ li.cate-li-flex
 .row.custom-3
     max-width: 1140px
     margin: auto
+@media screen and (max-width: 1200px)
+    .cate-grid
+        grid-template-columns: repeat(3, minmax(201px, 1fr))
+@media screen and (max-width: 920px)
+    .cate-grid
+        grid-template-columns: repeat(2, minmax(201px, 1fr))
+@media screen and (max-width: 840px)
+    .blog-flex
+        flex-direction: column
+        .blog-flex-1
+            width: 100%
+            max-width: 100%
+@media screen and (max-width: 500px)
+    .cate-grid
+        grid-template-columns: repeat(1, minmax(201px, 1fr))

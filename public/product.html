@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/dist/all.min.css">
   <link rel="stylesheet" href="/dist/slick.css">
   <link rel="stylesheet" href="/dist/slick-theme.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,700,700i&amp;subset=vietnamese"
@@ -26,7 +27,7 @@
           <div class="col-sm-12">
             <div class="tl-header with-cart-ribbon">
               <div class="logo">
-                <span>OXYGEN</span>
+                <span><a href="/">OXYGEN</a></span>
               </div>
               <nav class="sec-nav">
                 <ul id="menu-top-links" class="sec-nav-menu">
@@ -123,25 +124,61 @@
       </div>
     </div>
   </header>
+  <header id="luxbar" class="luxbar-fixed">
+    <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+    <div class="luxbar-menu luxbar-menu-right luxbar-menu-light">
+      <ul class="luxbar-navigation">
+        <li class="luxbar-header">
+          <div class="logo">
+            <span><a href="/">OXYGEN</a></span>
+          </div>
+          <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox">
+            <span></span> </label>
+        </li>
+        <li class="luxbar-item"><a href="#home"><span>Home</span><span class="nm-menu-toggle"></span></a></li>
+        <li class="luxbar-item"><a href="#news"><span>Shop</span><span class="nm-menu-toggle sub-li"><i class="fas fa-hand-paper"></i></span></a>
+          <ul class="sub-menu">
+            <li class="luxbar-item"><a>Shop Full Width</a></li>
+            <li class="luxbar-item"><a>Shop With Sidebar</a></li>
+            <li class="luxbar-item"><a>Single Product</a></li>
+            <li class="luxbar-item"><a>Grouped product</a></li>
+            <li class="luxbar-item"><a>Varible Product</a></li>
+            <li class="luxbar-item"><a>External Product</a></li>
+          </ul>
+        </li>
+        <li class="luxbar-item"><a href="#contact"><span>Layouts</span><span class="nm-menu-toggle"></span></a></li>
+        <li class="luxbar-item"><a href="#about"><span>Pages</span><span class="nm-menu-toggle"><i class="fas fa-hand-paper"></i></span></a>
+          <ul class="sub-menu">
+            <li class="luxbar-item"><a>Contact Us</a></li>
+            <li class="luxbar-item"><a>F.A.Q</a></li>
+            <li class="luxbar-item"><a>Search Result</a></li>
+            <li class="luxbar-item"><a>Checkout</a></li>
+            <li class="luxbar-item"><a>Cart</a></li>
+            <li class="luxbar-item"><a>My Account</a></li>
+          </ul>
+        </li>
+        <li class="luxbar-item"><a href="#about"><span>Blog</span><span class="nm-menu-toggle"></span></a></li>
+        <li class="luxbar-item"><a href="#about"><span>Cart</span><span class="nm-menu-toggle"></span></a></li>
+      </ul>
+    </div>
+  </header>
   <section class="body">
     <div class="main">
       <div class="row custom-4">
-        <div class="main">
+        <div class="main mobile">
           <div class="single-product-wrapper">
             <div class="product-wrapper">
               <div class="slider-img">
                 <div class="slider-main">
                   <div class="slider-main-img">
                     <span class="zoomImg">
-                      <span id="abcde">
-                        <img class="img-active" src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2014/05/image1xxl4.jpg"
-                          width="570" height="689" />
-                      </span>
-                      <img class="products-img" src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image2xxl4.jpg"
+                      <img class="img-active product-immgs imgsuper" src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2014/05/image1xxl4.jpg"
                         width="570" height="689" />
-                      <img class="products-img" src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image3xxl4.jpg"
+                      <img class="products-img product-immgs" src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image2xxl4.jpg"
+                        width="570" height="689 product-immgs" />
+                      <img class="products-img product-immgs" src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image3xxl4.jpg"
                         width="570" height="689" />
-                      <img class="products-img" src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image4xxl4.jpg"
+                      <img class="products-img product-immgs" src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image4xxl4.jpg"
                         width="570" height="689" />
                     </span>
                   </div>
@@ -591,72 +628,72 @@
   </section>
   <footer class="footer">
     <div class="footer-big">
-      <div class="footer-widgets">
-        <div class="col-sm-3">
-          <div class="footer-title">
-            <h3 class="widget-title">Women</h3>
-          </div>
-          <div class="widget-menu">
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-          </div>
+        <div class="footer-widgets">
+            <div class="col-sm-3">
+                <div class="footer-title">
+                    <h3 class="widget-title">Women</h3>
+                </div>
+                <div class="widget-menu">
+                    <a><span>Dresses</span></a>
+                    <a><span>Blouses</span></a>
+                    <a><span>Swimwear</span></a>
+                    <a><span>Dresses</span></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-title">
+                    <h3 class="widget-title">Men</h3>
+                </div>
+                <div class="widget-menu">
+                    <a><span>Accessories</span></a>
+                    <a><span>T-Shirts</span></a>
+                    <a><span>T-Shirts</span></a>
+                    <a><span>Jackets</span></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-title">
+                    <h3 class="widget-title">Kids</h3>
+                </div>
+                <div class="widget-menu">
+                    <a><span>Shoes</span></a>
+                    <a><span>Accessories</span></a>
+                    <a><span>Blouses</span></a>
+                    <a><span>Shirts</span></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-title">
+                    <h3 class="widget-title">Shoes</h3>
+                </div>
+                <div class="widget-menu">
+                    <a><span>Shoes</span></a>
+                    <a><span>Accessories</span></a>
+                    <a><span>Blouses</span></a>
+                    <a><span>Shirts</span></a>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-3">
-          <div class="footer-title">
-            <h3 class="widget-title">Women</h3>
-          </div>
-          <div class="widget-menu">
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-          </div>
+        <div class="footer-container">
+            <div class="footer-container-left">
+                <a><span>Home</span></a>
+                <a><span>Shop</span></a>
+                <a><span>Blog</span></a>
+                <a><span>Contact us</span></a>
+            </div>
+            <div class="footer-container-right">
+                <span><img src="https://banner2.kisspng.com/20171216/dcc/mastercard-icon-png-5a3556c6e81b34.5328243515134450629507.jpg"
+                        width="54" height="24" /></span>
+                <span><img src="https://banner2.kisspng.com/20171216/dcc/mastercard-icon-png-5a3556c6e81b34.5328243515134450629507.jpg"
+                        width="54" height="24" /></span>
+                <span><img src="https://banner2.kisspng.com/20171216/dcc/mastercard-icon-png-5a3556c6e81b34.5328243515134450629507.jpg"
+                        width="54" height="24" /></span>
+                <span><img src="https://banner2.kisspng.com/20171216/dcc/mastercard-icon-png-5a3556c6e81b34.5328243515134450629507.jpg"
+                        width="54" height="24" /></span>
+            </div>
         </div>
-        <div class="col-sm-3">
-          <div class="footer-title">
-            <h3 class="widget-title">Women</h3>
-          </div>
-          <div class="widget-menu">
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="footer-title">
-            <h3 class="widget-title">Women</h3>
-          </div>
-          <div class="widget-menu">
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-            <a><span>Dresses</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-container">
-        <div class="footer-container-left">
-          <a><span>Home</span></a>
-          <a><span>Shop</span></a>
-          <a><span>Blog</span></a>
-          <a><span>Contact us</span></a>
-        </div>
-        <div class="footer-container-right">
-          <span><img src="https://banner2.kisspng.com/20171216/dcc/mastercard-icon-png-5a3556c6e81b34.5328243515134450629507.jpg"
-              width="54" height="24" /></span>
-          <span><img src="https://banner2.kisspng.com/20171216/dcc/mastercard-icon-png-5a3556c6e81b34.5328243515134450629507.jpg"
-              width="54" height="24" /></span>
-          <span><img src="https://banner2.kisspng.com/20171216/dcc/mastercard-icon-png-5a3556c6e81b34.5328243515134450629507.jpg"
-              width="54" height="24" /></span>
-          <span><img src="https://banner2.kisspng.com/20171216/dcc/mastercard-icon-png-5a3556c6e81b34.5328243515134450629507.jpg"
-              width="54" height="24" /></span>
-        </div>
-      </div>
     </div>
-  </footer>
+</footer>
 </body>
 <div id="fb-root"></div>
 <script>(function (d, s, id) {
@@ -667,8 +704,7 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/dist/jquery.elevateZoom-3.0.8.min.js"></script>
-
+<script type="text/javascript" src="/dist/jquery.zoom.min.js"></script>
 <script>
   $(document).ready(function () {
     $("#des").click(function () {
@@ -690,10 +726,9 @@
       $(".zoomImg img").removeClass("img-active")
       $(".zoomImg img:nth-child(" + id + ")").addClass("img-active")
     })
-    $("#abcde").elevateZoom({
-      zoomType: "inner",
-      cursor: "crosshair"
-    });
+    $('.luxbar-item').click(function(event){
+    $(this).children(':last').toggleClass(" active");
+  });
   });
 </script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
