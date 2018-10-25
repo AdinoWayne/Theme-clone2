@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/dist/main.css">
   <link rel="stylesheet" href="/dist/all.min.css">
+  <link rel="stylesheet" href="/dist/modal.css">
   <link rel="stylesheet" href="/dist/slick.css">
   <link rel="stylesheet" href="/dist/slick-theme.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
@@ -695,6 +696,10 @@
     </div>
 </footer>
 </body>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
 <div id="fb-root"></div>
 <script>(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -729,6 +734,14 @@
     $('.luxbar-item').click(function(event){
     $(this).children(':last').toggleClass(" active");
   });
+  $('.product-immgs').click(function(){
+    $('#myModal').css("display","block")
+    $('#img01').attr("src",$(this).attr("src"))
+    
+  })
+  $('.close').click(function(){
+    $('#myModal').css("display","none")
+  })
   });
 </script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
