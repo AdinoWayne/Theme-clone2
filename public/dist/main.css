@@ -2414,6 +2414,9 @@ li.cate-li-flex {
       margin: 0;
       margin-bottom: 20px; } }
 
+.col-sm-4 .widget-menu a {
+  display: block; }
+
 body {
   margin: 0;
   background-color: #fff;
